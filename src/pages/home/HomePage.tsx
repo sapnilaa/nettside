@@ -2,7 +2,7 @@
 
 function HomePage() {
     return (
-        <div className = "bg-blue-500">
+        <div className = "flex flex-col justify-center items-center">
             <p className = "text-center font-semibold">Hello World!</p>
         </div>
     )
