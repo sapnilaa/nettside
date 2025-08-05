@@ -2,8 +2,8 @@
 
 function HomePage() {
     return (
-        <div>
-            <h1>Nettside</h1>
+        <div className = "bg-blue-500">
+            <p className = "text-center font-semibold">Hello World!</p>
         </div>
     )
 }
