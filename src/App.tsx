@@ -2,12 +2,18 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import HomePage from './pages/home/HomePage';
+import TopBar from './components/TopBar/TopBar';
 
 function App() {
   return (
-    <Routes>
-      <Route path = "/" element = {<HomePage />} />
-    </Routes>
+    <div>
+      <TopBar/>
+      <div className = "pt-16">
+        <Routes>
+          <Route path = "/" element = {<HomePage />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
 
