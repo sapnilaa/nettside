@@ -1,0 +1,254 @@
+{
+    "personal_info": {
+        "name": "Sapnil Aditya Ayman",
+        "age": 22,
+        "address": "Ammerudveien 91",
+        "postCode": "0958 Oslo",
+        "mail": "sapnil1507@icloud.com",
+        "phone": "47713212",
+        "birth": "15.juli 2003"
+    },
+
+    "education": [
+        {
+            "name": "Ammerud skole",
+            "years": "2012 - 2019"
+        },
+        {
+            "name": "Apaløkka skole",
+            "years": "2016 - 2019"
+        },
+        {
+            "name": "Kuben videregående skole",
+            "degree": "Studiespesialisering med teknologi og forskningslære",
+            "years": "2019 - 2022"
+        },
+        {
+            "name": "Universitetet i Oslo",
+            "degree": "Bachelor i Informatikk: Programmering og Systemarkitektur",
+            "years": "2022 - 2025",
+            "semsters": [
+                {
+                    "semester": 1,
+                    "courses": [
+                        {
+                            "courseCode": "IN1000",
+                            "courseName": "Introduksjon til objektorientert programmering"
+                        },
+                        {
+                            "courseCode": "IN1020",
+                            "courseName": "Introduksjon til datateknologi"
+                        },
+                        {
+                            "courseCode": "EXPHIL03",
+                            "courseName": "Examen philosophicum"
+                        }
+                    ]
+                },
+                {
+                    "semester": 2,
+                    "courses":[
+                        {
+                            "courseCode": "IN1010",
+                            "courseName": "Objektorientert programmering"
+                        },
+                        {
+                            "courseCode": "IN1030",
+                            "courseName": "Systemer, krav og konsekvenser"
+                        },
+                        {
+                            "courseCode": "IN1150",
+                            "courseName": "Logiske metoder"
+                        }
+                    ]   
+                },
+                {
+                    "semester": 3,
+                    "courses": [
+                        {
+                            "courseCode": "IN2010",
+                            "courseName": "Algoritmer og datastrukturer"
+                        },
+                        {
+                            "courseCode": "IN2090",
+                            "courseName": "Databaser og datamodellering"
+                        },
+                        {
+                            "courseCode": "IN2120",
+                            "courseName": "Informasjonssikkerhet"
+                        }
+                    ]
+                },
+                {
+                    "semester": 4,
+                    "courses": [
+                        {
+                            "courseCode": "IN2000",
+                            "courseName": "Software Engineering med prosjektarbeid"
+                        },
+                        {
+                            "courseCode": "IN2140",
+                            "courseName": "Introduksjon til operativsystemer og datakommunikasjon"
+                        }
+                    ]
+                },
+                {
+                    "semester": 5,
+                    "courses": [
+                        {
+                            "courseCode": "IN2040",
+                            "courseName": "Funksjonell programmering"
+                        },
+                        {
+                            "courseCode": "IN3040",
+                            "courseName": "Programmeringsspråk"
+                        },
+                        {
+                            "courseCode": "IN2031",
+                            "courseName": "Prosjektoppgave i programmering"
+                        },
+                        {
+                            "courseCode": "AST1010",
+                            "courseName": "Astronomi - en kosmisk reise"
+                        }
+                    ]
+                },
+                {
+                    "semester": 6,
+                    "courses": [
+                        {
+                            "courseCode": "IN2110",
+                            "courseName": "Språkteknologiske metoder"
+                        },
+                        {
+                            "courseCode": "IN2150",
+                            "courseName": "IT i organisasjoner"
+                        },
+                        {
+                            "courseCode": "IN3240",
+                            "courseName": "Testing av programvare"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Universitetet i Oslo",
+            "degree": "Master i Informatikk: Programmering og Systemarkitektur",
+            "semsters": [
+                {
+                    "courseCode": "IN4120",
+                    "courseName": "Søketeknologi"
+                },
+                {
+                    "courseCode": "IN5140",
+                    "courseName": "Smarte prosesser og smidige metoder i systemutvikling"
+                },
+                {
+                    "courseCode": "IN5320",
+                    "courseName": "Development in platform ecosystems"
+                }
+            ]
+        }
+    ],
+
+    "experience": [
+        {
+            "title": "Sommer-frivillig hos Fagutvalget ved Institutt for Informatikk",
+            "info": "Et tverrfaglig samarbeid med andre studenter for å opprette en nettside for booking og betaling av bokskap i Ole Johan Dahls hus (IFI).",
+            "period": "Sommer 2025"
+        },
+        {
+            "title": "Retter hos Institutt for Informatikk, UiO i IN2090",
+            "info": "Rettet innleveringer fra studenter.",
+            "period": "August 2024 - Desember 2024"
+        },
+        {
+            "title": "Butikkmedarbeider i Europris Grorud",
+            "info": "Arbeidet som butikkmedarbeider i 1 uke i regi av Aktiv Grorud.",
+            "period": "Høstferie 2022"
+        },
+        {
+            "title": "Butikkmedarbeider i Europris Stovner",
+            "info": "Arbeidet som butikkmedarbeider i 2 uker i regi av Aktiv Grorud.",
+            "period": "Sommer 2022"
+        }
+    ],
+
+    "projects": [
+        {
+            "title": "Denne nettsiden",
+            "info": "Et hobbyprosjekt for å vise til prosjekter, erfaringer og info om meg :)",
+            "technologies": [
+                "React",
+                "HTML",
+                "JavaScript",
+                "Tailwind CSS",
+                "Git"
+            ]
+        },
+        {
+            "title": "Lockr",
+            "info": "Nettside som muliggjør booking og betaling av skap på Ole Johan Dahls hus i Gaustad. Laget med medstudenter i et frivillig og tverrfaglig sommerprosjekt i regi av Fagutvalget ved Institutt for Informatikk.",
+            "technologies": [
+                "React",
+                "HTML",
+                "JavaScript",
+                "Tailwind CSS",
+                "Django",
+                "Python",
+                "Node",
+                "Jira",
+                "Git"
+            ]
+        },
+        {
+            "title": "Haze",
+            "info": "En android app for vær og farevarsler som ble laget sammen med 5 andre studenter i forbindelse med IN2000-faget.",
+            "technologies": [
+                "Kotlin",
+                "Android Studio",
+                "Figma",
+                "Trello",
+                "Git"
+            ]
+        }
+    ],
+
+    "technologies": [
+        "Python",
+        "Java",
+        "SQL",
+        "ML (SML)",
+        "Prolog",
+        "Assembler",
+        "Kotlin",
+        "Racket (Scheme)",
+        "JavaScript",
+        "HTML",
+        "Tailwind CSS",
+        "Android Studio",
+        "Git",
+        "Django",
+        "React",
+        "Node",
+        "Git/GitHub",
+        "Figma",
+        "Trello",
+        "Jira"
+    ],
+
+    "referances": [
+        {
+            "placeHolder": "Oppgis på forespørsel."
+        }
+    ],
+
+    "other": {
+        "languages": [
+            "Norsk flytende",
+            "Engelsk flytende",
+            "Bengalsk morsmål"
+        ]
+    }
+}
