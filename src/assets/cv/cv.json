@@ -135,6 +135,7 @@
         {
             "name": "Universitetet i Oslo",
             "degree": "Master i Informatikk: Programmering og Systemarkitektur",
+            "years": "2025 - 2027",
             "semsters": [
                 {
                     "courseCode": "IN4120",
