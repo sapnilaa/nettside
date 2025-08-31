@@ -138,16 +138,21 @@
             "years": "2025 - 2027",
             "semsters": [
                 {
-                    "courseCode": "IN4120",
-                    "courseName": "Søketeknologi"
-                },
-                {
-                    "courseCode": "IN5140",
-                    "courseName": "Smarte prosesser og smidige metoder i systemutvikling"
-                },
-                {
-                    "courseCode": "IN5320",
-                    "courseName": "Development in platform ecosystems"
+                    "semester": 1,
+                    "courses": [
+                        {
+                            "courseCode": "IN4120",
+                            "courseName": "Søketeknologi"
+                        },
+                        {
+                            "courseCode": "IN5140",
+                            "courseName": "Smarte prosesser og smidige metoder i systemutvikling"
+                        },
+                        {
+                            "courseCode": "IN5320",
+                            "courseName": "Development in platform ecosystems"
+                        }
+                    ]
                 }
             ]
         }
