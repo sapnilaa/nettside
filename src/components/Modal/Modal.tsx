@@ -1,12 +1,15 @@
-
+import { Link } from "react-router-dom";
 
 
 
 function Modal() {
+
+    const modalStyle="fixed left-[50%] top-[50%] rounded-md bg-opacity-85 px-4 py-2 border-b-2 border-l-2 active:border-0"
+
     return (
-        <div className = "fixed h-[500px] w-[700px] flex items-center justify-center bg-green-700 bg-opacity-85 px-4 py-2 hover:bg-opacity-100">
-            <p className = "font-semibold">Halloisen!</p>
-        </div>
+        <main className={modalStyle}>
+            <Link to="/info">Info</Link>
+        </main>
     )
     
 }

@@ -1,9 +1,9 @@
-import Modal from "../../components/Modal"
+import Modal from "../../components/Modal/Modal"
 
 
 function HomePage() {
     return (
-        <main className = "flex flex-col justify-center items-center">
+        <main className="flex flex-col justify-center items-center">
             <Modal/>
         </main>
     )

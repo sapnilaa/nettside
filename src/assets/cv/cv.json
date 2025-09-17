@@ -195,7 +195,7 @@
         },
         {
             "title": "Lockr",
-            "info": "Nettside som muliggjør booking og betaling av skap på Ole Johan Dahls hus i Gaustad. Laget med medstudenter i et frivillig og tverrfaglig sommerprosjekt i regi av Fagutvalget ved Institutt for Informatikk.",
+            "info": "Nettside som muliggjør booking og betaling av skap på Ole Johan Dahls-hus i Gaustad. Laget med medstudenter i et frivillig og tverrfaglig sommerprosjekt i regi av Fagutvalget ved Institutt for Informatikk.",
             "technologies": [
                 "React",
                 "HTML",
