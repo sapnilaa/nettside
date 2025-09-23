@@ -7,17 +7,17 @@ function InfoPage() {
 
     return (
         <main className="">
-            <header className="flex justify-center items-center pt-4">
+            {/* <header className="flex justify-center items-center pt-4">
                 <h1 className="text-4xl text-center font-medium">{info.personal_info.name}</h1>
-            </header>
+            </header> */}
             
-            <article className="grid grid-cols-2 gap-4">
+            <article className="grid grid-cols-2 gap-4 mt-4">
                 <section className={sectonCardStyle}>
-                    <h2 className="text-3xl text-center font-medium">Erfaringer</h2>
+                    <h2 className="text-3xl text-center font-medium mb-4">Erfaringer</h2>
                     <ul>
                         {info.experience.map((e, index) => (
                             <li key={index} className="mt-4 mb-4">
-                                <h2 className="text-2xl text-start font-medium">{e.title}</h2>
+                                <h3 className="text-xl text-center italic">{e.title}</h3>
                                 <p className="text-start font-light">{e.period}</p>
                                 <p className="text-start">{e.info}</p>
                             </li>
@@ -26,16 +26,16 @@ function InfoPage() {
                 </section>
 
                 <section className={sectonCardStyle}>
-                    <h2 className="text-3xl text-center font-medium">Prosjekter</h2>
+                    <h2 className="text-3xl text-center font-medium mb-4">Prosjekter</h2>
                         <ul>
                             {info.projects.map((p, index) => (
                                 <li key={index}>
-                                    <h3 className="text-2xl text-center italic">{p.title}</h3>
+                                    <h3 className="text-xl text-center italic">{p.title}</h3>
 
-                                    <ul className="flex">
+                                    <ul className="flex overflow-scroll no-scrollbar">
                                         {p.technologies.map((t, index) => (
                                             <li key={index} className="inline mr-4">
-                                                <p className="italic font-extralight">{t}</p>
+                                                <p className="italic font-extralight whitespace-nowrap">{t}</p>
                                             </li>
                                         ))}
                                     </ul>
@@ -50,18 +50,18 @@ function InfoPage() {
 
             <article>
                 <section className={sectonCardStyle}>
-                    <h2 className="text-3xl text-center font-bold">Utdanning</h2>
+                    <h2 className="text-3xl text-center font-medium">Utdanning</h2>
                     <ul>
                         {[...info.education].reverse().map((e, index) => (
                             <li key={index}>
-                                <h3 className="text-2xl font-bold">{e.name}</h3>
-                                <p className="">{e.years}</p>
-                                <p className="text-center">{e.degree}</p>
+                                <h3 className="text-xl text-center italic mt-4">{e.degree}</h3>
+                                <p className="font-extralight text-center">{e.years}</p>
+                                <p className="font-medium text-center">{e.name}</p>
 
-                                <ul>
+                                <ul className="grid grid-cols-2">
                                     {e.semsters?.reverse().map((m, index) => (
                                         <li key={index}>
-                                            <p className="font-light italic">Semester: {m.semester}</p>
+                                            <p className="font-light italic mt-4 underline">{m.semester}. semester</p>
 
                                             <ul>
                                                 {m.courses.map((course, index) => (
@@ -79,11 +79,11 @@ function InfoPage() {
                 </section>
 
                 <section className={sectonCardStyle}>
-                    <h2 className="text-3xl text-center font-bold">Teknologier</h2>
-                    <ul>
+                    <h2 className="text-3xl text-center font-bold mb-4">Teknologier</h2>
+                    <ul className="flex overflow-scroll no-scrollbar">
                         {info.technologies.map((tech, index) => (
-                            <li key={index}>
-                                <p className="">{tech}</p>
+                            <li key={index} className="inline mr-4">
+                                <p className="whitespace-nowrap">{tech}</p>
                             </li>
                         ))}
                     </ul>
