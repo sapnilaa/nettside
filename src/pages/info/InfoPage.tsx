@@ -7,10 +7,6 @@ function InfoPage() {
 
     return (
         <main className="">
-            {/* <header className="flex justify-center items-center pt-4">
-                <h1 className="text-4xl text-center font-medium">{info.personal_info.name}</h1>
-            </header> */}
-            
             <article className="grid grid-cols-2 gap-4 mt-4">
                 <section className={sectonCardStyle}>
                     <h2 className="text-3xl text-center font-medium mb-4">Erfaringer</h2>
