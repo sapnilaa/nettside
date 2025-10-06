@@ -7,7 +7,7 @@ import InfoPage from './pages/info/InfoPage';
 
 function App() {
   return (
-    <div>
+    <div className="ml-40 mr-40">
       <TopBar/>
       <div className="pt-8">
         <Routes>

@@ -1,5 +1,36 @@
 import info from '../../assets/cv/cv.json'
 
+const coursePageLinks = [
+    { key: "IN1000", value: "https://www.uio.no/studier/emner/matnat/ifi/IN1000/" },
+    { key: "IN1020", value: "https://www.uio.no/studier/emner/matnat/ifi/IN1020/" },
+    { key: "EXPHIL03", value: "https://www.uio.no/studier/emner/hf/ifikk/EXPHIL03/" },
+    { key: "IN1010", value: "https://www.uio.no/studier/emner/matnat/ifi/IN1010/" },
+    { key: "IN1030", value: "https://www.uio.no/studier/emner/matnat/ifi/IN1030/" },
+    { key: "IN1150", value: "https://www.uio.no/studier/emner/matnat/ifi/IN1150/" },
+    { key: "IN2010", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2010/" },
+    { key: "IN2029", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2090/" },
+    { key: "IN2120", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2120/" },
+    { key: "IN2000", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2000/" },
+    { key: "IN2140", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2140/" },
+    { key: "IN2040", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2040/" },
+    { key: "IN3040", value: "https://www.uio.no/studier/emner/matnat/ifi/IN3040/" },
+    { key: "AST1010", value: "https://www.uio.no/studier/emner/matnat/astro/AST1010/" },
+    { key: "IN2031", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2031/" },
+    { key: "IN2110", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2110/" },
+    { key: "IN2150", value: "https://www.uio.no/studier/emner/matnat/ifi/IN2150/" },
+    { key: "IN3240", value: "https://www.uio.no/studier/emner/matnat/ifi/IN3240/" },
+]
+
+const createHyperlinkToCourse = (courseCode: string, courseTitle: string) => {
+    const match = coursePageLinks.find(({key}) => key === courseCode);
+
+    if (match) {
+        return <a className ="hover:underline" href={match.value}>{match.key} - {courseTitle}</a>;
+    } else {
+        return null;
+    }
+}  
+
 
 function InfoPage() {
 
@@ -50,7 +81,7 @@ function InfoPage() {
                     <ul>
                         {[...info.education].reverse().map((e, index) => (
                             <li key={index}>
-                                <h3 className="text-xl text-center italic mt-4">{e.degree}</h3>
+                                <h3 className="text-xl text-center italic mt-8">{e.degree}</h3>
                                 <p className="font-extralight text-center">{e.years}</p>
                                 <p className="font-medium text-center">{e.name}</p>
 
@@ -62,7 +93,8 @@ function InfoPage() {
                                             <ul>
                                                 {m.courses.map((course, index) => (
                                                     <li key={index}>
-                                                        <p>{course.courseCode} - {course.courseName}</p>
+                                                        {/* <p>{course.courseCode} - {course.courseName}</p> */}
+                                                        {createHyperlinkToCourse(course.courseCode, course.courseName)}
                                                     </li>
                                                 ))}
                                             </ul>
