@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nettside/static/css/main.f18a669b.css",
-    "main.js": "/nettside/static/js/main.138d3ddf.js",
+    "main.js": "/nettside/static/js/main.9a130df8.js",
     "static/js/453.23245032.chunk.js": "/nettside/static/js/453.23245032.chunk.js",
     "index.html": "/nettside/index.html",
     "main.f18a669b.css.map": "/nettside/static/css/main.f18a669b.css.map",
-    "main.138d3ddf.js.map": "/nettside/static/js/main.138d3ddf.js.map",
+    "main.9a130df8.js.map": "/nettside/static/js/main.9a130df8.js.map",
     "453.23245032.chunk.js.map": "/nettside/static/js/453.23245032.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f18a669b.css",
-    "static/js/main.138d3ddf.js"
+    "static/js/main.9a130df8.js"
   ]
 }
