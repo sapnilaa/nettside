@@ -108,7 +108,7 @@ function InfoPage() {
                 </section>
 
                 <section className={ sectionCardStyle }>
-                    <h2 className="text-3xl text-center font-bold mb-4">Teknologier</h2>
+                    <h2 className="text-3xl text-center font-medium mb-8">Teknologier</h2>
                     <ul className="flex overflow-scroll no-scrollbar">
                         {info.technologies.map((tech, index) => (
                             <li key={index} className="inline mr-4">

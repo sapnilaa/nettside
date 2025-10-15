@@ -9,13 +9,9 @@ function TopBar() {
             <div className="flex justify-between w-full">
                 <Link to="/">
                     <button className="">
-                        <h1 className="text-2xl ml-4 hover:text-gray-500">Sapnil Ayman</h1>
+                        <h1 className="text-2xl mb-2 mt-2 ml-4 hover:text-gray-500">Sapnil Ayman</h1>
                     </button>
                 </Link>
-                <section>
-                    <button className="px-4 py-2">Test</button>
-                    <button className="px-4 py-2">Test</button>
-                </section>
             </div>
         </nav>
     );
