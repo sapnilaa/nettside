@@ -1,5 +1,6 @@
 import GitHubButton from "../../components/GitHubButton/GitHubButton"
 import InfoButton from "../../components/InfoButton/InfoButton"
+import Sand from "./background/Sand"
 
 function HomePage() {
     const buttonStyle = { 
@@ -9,7 +10,8 @@ function HomePage() {
 
     return (
         <main className="flex justify-center items-center h-[100vh]">
-            <section className="flex flex-col border-b-2 border-l-2 rounded-xl m-5 px-20 py-10">
+            {/* <Sand /> */}
+            <section className="flex fixed flex-col border-b-2 border-l-2 rounded-xl m-5 px-20 py-10">
                 <InfoButton style={ buttonStyle.info } /> 
                 <GitHubButton style={ buttonStyle.github }/>
             </section>
