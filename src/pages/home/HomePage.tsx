@@ -27,7 +27,7 @@ function HomePage() {
 
         do {
             x = Math.random() * (screenWidth - logoWidth);
-            y = Math.random() * (screenHeight - logoHeight);
+            y = Math.random() * (screenHeight - 48 - logoHeight); // Doesnt spawn inside navbar
         } while (x + logoWidth > sectionRect.left && x < sectionRect.right && y + logoHeight > sectionRect.top && y < sectionRect.bottom);
 
         let dx = Math.random() > 0.5 ? 2 : -2;
@@ -37,11 +37,11 @@ function HomePage() {
             x += dx;
             y += dy;
 
-            if (x + logo?.offsetWidth >= screenWidth || x < 0) {
+            if (x + logo.offsetWidth >= screenWidth || x < 0) {
                 dx *= -1;
             }
 
-            if (y + logo?.offsetHeight >= screenHeight || y < 0) {
+            if (y + logo.offsetHeight >= screenHeight || y < 48) { // Doesnt overlap navbar
                 dy *= -1;
             }
 
