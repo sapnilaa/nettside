@@ -20,18 +20,22 @@ function HomePage() {
 
         const logoWidth = logo.offsetWidth;
         const logoHeight = logo.offsetHeight;
+        const sectionRect = section.getBoundingClientRect();
 
-        let x = Math.random() * (screenWidth - logoWidth);
-        let y = Math.random() * (screenHeight - logoHeight);
+        let x: number;
+        let y: number;
+
+        do {
+            x = Math.random() * (screenWidth - logoWidth);
+            y = Math.random() * (screenHeight - logoHeight);
+        } while (x + logoWidth > sectionRect.left && x < sectionRect.right && y + logoHeight > sectionRect.top && y < sectionRect.bottom);
 
         let dx = Math.random() > 0.5 ? 2 : -2;
         let dy = Math.random() > 0.5 ? 2 : -2;
 
         const moveLogo = () => {
-
             x += dx;
             y += dy;
-
 
             if (x + logo?.offsetWidth >= screenWidth || x < 0) {
                 dx *= -1;
@@ -41,7 +45,8 @@ function HomePage() {
                 dy *= -1;
             }
 
-            const sectionRect = section.getBoundingClientRect();
+            logo.classList.remove("hidden");
+
             const logoRect = {
                 left: x,
                 right: x + logo.offsetWidth,
@@ -68,7 +73,7 @@ function HomePage() {
 
     return (
         <main className="flex justify-center items-center h-[100vh]">
-            <div id="dvd-logo" className="absolute w-24 h-12 bg-black rounded-lg"></div>
+            <div id="dvd-logo" className="absolute w-24 h-12 bg-black rounded-lg hidden"></div>
 
             <section ref={sectionRef} className="flex fixed flex-col border-b-2 border-l-2 rounded-xl m-5 px-20 py-10">
                 <InfoButton style={ buttonStyle.info } /> 
