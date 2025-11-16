@@ -2,11 +2,11 @@ import { useEffect, useRef } from "react"
 import GitHubButton from "../../components/GitHubButton/GitHubButton"
 import InfoButton from "../../components/InfoButton/InfoButton"
 import DVDLogo from "../../assets/images/DVD_logo.svg.png"
+import FlashcardButton from "../../components/FlashCardButton/FlashcardButton"
 
 function HomePage() {
     const buttonStyle = { 
-        info: "rounded-md bg-opacity-85 px-4 py-2 border-b-2 border-l-2 active:border-0 hover:text-gray-500 mb-4",
-        github: "rounded-md bg-opacity-85 px-4 py-2 border-b-2 border-l-2 active:border-0 hover:text-gray-500"
+        button: "rounded-md bg-opacity-85 px-4 py-2 border-b-2 border-l-2 active:border-0 hover:text-gray-500 mb-4",
     }
 
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -83,8 +83,9 @@ function HomePage() {
             <img id="dvd-logo" className="absolute w-24 h-12 hidden" src={DVDLogo} alt="DVD-logo"></img>
 
             <section ref={sectionRef} className="flex fixed flex-col border-b-2 border-l-2 rounded-xl m-5 px-20 py-10">
-                <InfoButton style={ buttonStyle.info } /> 
-                <GitHubButton style={ buttonStyle.github }/>
+                <InfoButton style={ buttonStyle.button } /> 
+                <GitHubButton style={ buttonStyle.button }/>
+                <FlashcardButton style={ buttonStyle.button } />
             </section>
         </main>
     )
