@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react"
 import InfoButton from "../../components/InfoButton/InfoButton"
 import DVDLogo from "../../assets/images/DVD_logo.svg.png"
-import FlashcardButton from "../../components/FlashCardButton/FlashcardButton"
 
 function HomePage() {
     const buttonStyle = { 
@@ -83,8 +82,6 @@ function HomePage() {
 
             <section ref={sectionRef} className="flex fixed flex-col border-b-2 border-l-2 rounded-xl m-5 px-20 py-10">
                 <InfoButton style={ buttonStyle.button } /> 
-                {/* <GitHubButton style={ buttonStyle.button }/> */}
-                {/* <FlashcardButton style={ buttonStyle.button } /> */}
             </section>
         </main>
     )
